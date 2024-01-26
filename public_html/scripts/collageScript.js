@@ -25,16 +25,30 @@ static startCycle(){
                  imgItem.id = `row-${Collage.#elemCount}`;
                  Collage.#collagePlace.append(imgItem);
                  if(Collage.#checkBorders()){
-                     Collage.#collagePlace.lastChild.remove();
-                     Collage.#collagePlace.replaceChild(
-                     imgItem, 
-                     document.getElementById(`row-${Collage.#elemNum}`));
-                     Collage.#elemNum += 1;
+                     Collage.stopCycle();
+                     Collage.updateImages();
                  } else{
                      Collage.#elemCount += 1;
                  }
                 });
     }, 3000); 
+}
+
+/*
+ * Обновление фотографий
+ */
+static updateImages(){
+    Collage.#collageCycle = setInterval(()=>{
+        fetch(`https://dog.ceo/api/breeds/image/random`)
+                .then(data => data.json())
+                .then(img => {
+                 let imgItem = document.createElement("img");
+                 imgItem.classList.add("imgElement");
+                 let item = document.getElementById(`row-${Collage.#elemNum}`);
+                 console.log(Collage.#elemNum + ' ' + Collage.#elemCount);
+                 item.src = img.message;
+                 Collage.#elemNum = (Collage.#elemNum + 1) % Collage.#elemCount;
+            })}, 3000);
 }
 
 /*
