@@ -45,7 +45,6 @@ static updateImages(){
                  let imgItem = document.createElement("img");
                  imgItem.classList.add("imgElement");
                  let item = document.getElementById(`row-${Collage.#elemNum}`);
-                 console.log(Collage.#elemNum + ' ' + Collage.#elemCount);
                  item.src = img.message;
                  Collage.#elemNum = (Collage.#elemNum + 1) % Collage.#elemCount;
             })}, 3000);
