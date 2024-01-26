@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Js Тестовое задание</title>
+        <meta charset="UTF-8">
+        <link href="styles/styles.css" rel="stylesheet" type="text/css"/>
+        <script src="scripts/pageScript.js" type="module"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="imageWindow">
+            <img id="bigImage" alt="null">
+            <div id="imageWindowButtonsBlock">
+                <div class="imageWindowButtons" id="downloadButton">Скачать</div>
+                <div class="imageWindowButtons" id="closeButton">Закрыть</div>
+            </div>
+        </div>
+        <div id="collagePlace"></div>
+        <div id="tablePlace">
+            <div id="sideMenu">
+                <div id="sideMenuHead">
+                    <div id="backButton">×</div>
+                    <div id="sideMenuTitle">Посты пользователя</div>
+                </div>
+                <div id="postsPlace"></div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <td class="headButton">id</td>
+                        <td class="headButton">Логин</td>
+                        <td class="headButton">Почта</td>
+                        <td class="headButton">ФИО</td>
+                        <td class="headButton">Дата рождения</td>
+                        <td class="headButton">Рост</td>
+                        <td class="headButton">IP-адрес</td>
+                    </tr>
+                </thead>
+                <tbody id="DataPlace">
+                </tbody>
+            </table>
+            <div id="buttonsPlace">
+                <div class="navButtons" id="previousPage">Назад</div>
+                <div class="navButtons" id="nextPage">Вперёд</div>
+            </div>
+        </div>
+    </body>
+</html>

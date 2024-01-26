@@ -1,0 +1,197 @@
+html{
+    height: 100%;
+    overflow: hidden;
+}
+body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start
+}
+#collagePlace{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    width: 35%;
+    
+    height: 100%;
+    background-color: black;
+}
+
+#tablePlace{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 65%;
+    height: 100%
+}
+
+table{
+    font-size: 15pt;
+    height: 100%;
+    margin: 15px;
+    width: 90%;
+    border-collapse: collapse;
+    border: solid 1px black
+}
+
+td{
+    padding-left: 10px;
+    padding-right: 10px;
+    max-height: 10px;
+    border: solid 1px black
+}
+
+.userRow:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.headButton:hover{
+    background-color: black;
+    color:white;
+    cursor:pointer;
+}
+
+#buttonsPlace{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navButtons{
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 25%;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.navButtons:hover{
+    background-color: black;
+    color: white;
+}
+
+#sideMenuHead{
+    height: 5%;
+    color: white;
+    background-color: black;
+    padding-top: 2%;
+    padding-left: 5%;
+    display: flex;
+    width: 100%;
+    font-size: 16pt;
+    flex-direction: row;
+    gap: 20%;
+}
+
+#sideMenu{
+    transition: 0.25s;
+    border: 1px solid black;
+    position: fixed;
+    width: 50%;
+    left: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    background-color: white;
+}
+
+#backButton{
+    font-size: 30pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#backButton:hover{
+    background-color: white;
+    color: black;
+}
+
+.postBlock{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.postTitle{
+    height: 25%;
+    width: 100%;
+    padding: 5px;
+}
+
+.postText{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    padding: 5px;
+}
+
+#postsPlace{
+    margin-top: 5px;
+    width: 100%;
+    height: 95%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgElement{
+    margin: 10px;
+    max-width: 50%;
+    transition: all 0.5s ease-in-out;
+    object-fit: contain;
+}
+
+#imageWindow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#bigImage{
+    max-width: 90%;
+    max-height: 50%;
+    object-fit: contain;
+}
+
+#imageWindowButtonsBlock{
+    width: 60%;
+    height: 10%;
+    border: 1px solid white;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.imageWindowButtons{
+    height: 50%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
